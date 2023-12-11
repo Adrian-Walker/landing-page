@@ -2,11 +2,13 @@
 
 
 :root{
-    --mainColor: #f50505;
-    --hoverColor: #5bacdf;
+    --mainColor: #ff0000ff;
+    --hoverColor: #f22020;
     --backgroundColor: #f1f8fc;
     --darkOne: #312f3a;
     --darkTwo: #45424b;
+    --lightOne: #919191;
+    --lightTwo: #aaa;
 }
 
   *,
@@ -37,5 +39,29 @@ a{
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    background-color: #f1f8fc;
+    background-color: var(--backgroundColor);
 }
+
+.container{
+    background-color: green;
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+    position: relative;
+}
+
+header .container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 40px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
